@@ -299,6 +299,9 @@ img {
 }
 
 .home__scroll{
+    display: block;
+    margin: 0 auto;
+    margin-top: 4rem;
     /* display: none; */
 }
 
@@ -352,7 +355,44 @@ img {
 }
 
 /*==================== ABOUT ====================*/
+.about__img{
+    width: 350px;
+    border-radius: 1rem;
+    display: block;
+    margin: 0 auto;
+}
 
+.about__description{
+    text-align: center;
+    margin-bottom: var(--mb-2-5);
+}
+
+.about__info{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: var(--mb-2-5);
+}
+
+.about__info-title{
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-semi-bold);
+    color: var(--title-color);
+}
+
+.about__info-name{
+    font-size: var(--smaller-font-size);
+}
+
+.about__info-title,
+.about__info-name{
+    display: block;
+    text-align: center;
+}
+
+.about__buttons{
+    display: flex;
+    justify-content: center;
+}
 
 /*==================== SKILLS ====================*/
 
