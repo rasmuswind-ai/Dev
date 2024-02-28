@@ -19,6 +19,13 @@ if(navClose){
     })
 }
 
+/*===== MENU HIDDEN WHEN CLICK OUTSIDE =====*/
+/* Validate if constant exists */
+document.onclick = function(e){
+    if(!navMenu(e.target) ){
+        navMenu.classList.remove('show-menu')
+    }
+}
 
 /*==================== REMOVE MENU MOBILE ====================*/
 const navLink = document.querySelectorAll('.nav__link')
