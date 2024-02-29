@@ -19,6 +19,16 @@ if(navClose){
     })
 }
 
+/*==================== REMOVE MENU WHEN CLICKED OUTSIDE MENU ====================*/
+document.addEventListener('click', closeMenu);
+document.addEventListener('touch', closeMenu);
+
+function closeMenu(event) {
+    if (!navMenu.contains(event.target) && !navToggle.contains(event.target)) {
+        navMenu.classList.remove('show-menu')
+    }
+}
+
 /*==================== REMOVE MENU MOBILE ====================*/
 const navLink = document.querySelectorAll('.nav__link')
 
@@ -30,16 +40,6 @@ function linkAction(){
 }
 
 navLink.forEach(n => n.addEventListener('click', linkAction))
-
-/* hide menu when click occurs outside the menu */
-document.addEventListener('click', closeMenu);
-document.addEventListener('touch', closeMenu);
-
-function closeMenu(event) {
-    if (!navMenu.contains(event.target) && !navToggle.contains(event.target)) {
-        navMenu.classList.remove('show-menu')
-    }
-}
 
 /*==================== ACCORDION SKILLS ====================*/
 const skillsContent = document.getElementsByClassName('skills__content'),
