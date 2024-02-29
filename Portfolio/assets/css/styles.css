@@ -1,11 +1,11 @@
-/*==================== GOOGLE FONTS ====================*/
+/*-------------------- GOOGLE FONTS --------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
-/*==================== VARIABLES CSS ====================*/
+/*-------------------- VARIABLES CSS --------------------*/
 :root {
     --header-height: 3rem;
 
-    /*========== Colors ==========*/
+    /*---------- Colors ----------*/
     /* Change favorite color */
     --hue-color: 250; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
 
@@ -23,7 +23,7 @@
     --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
 
-    /*========== Font and typography ==========*/
+    /*---------- Font and typography ----------*/
     --body-font: 'Poppins', sans-serif;
 
     /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
@@ -35,11 +35,11 @@
     --small-font-size: .813rem;
     --smaller-font-size: .75rem;
 
-    /*========== Font weight ==========*/
+    /*---------- Font weight ----------*/
     --font-medium: 500;
     --font-semi-bold: 600;
 
-    /*========== Margenes Bottom ==========*/
+    /*---------- Margenes Bottom ----------*/
     /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
     --mb-0-25: .25rem;
     --mb-0-5: .5rem;
@@ -50,7 +50,7 @@
     --mb-2-5: 2.5rem;
     --mb-3: 3rem;
 
-    /*========== z index ==========*/
+    /*---------- z index ----------*/
     --z-tooltip: 10;
     --z-fixed: 100;
     --z-modal: 1000;
@@ -69,13 +69,13 @@
     }
 }
 
-/*========== Variables Dark theme ==========*/
+/*---------- Variables Dark theme ----------*/
 
 
-/*========== Button Dark/Light ==========*/
+/*---------- Button Dark/Light ----------*/
 
 
-/*==================== BASE ====================*/
+/*-------------------- BASE --------------------*/
 * {
   box-sizing: border-box;
   padding: 0;
@@ -112,7 +112,7 @@ img {
   height: auto;
 }
 
-/*==================== REUSABLE CSS CLASSES ====================*/
+/*-------------------- REUSABLE CSS CLASSES --------------------*/
 .section {
   padding: 2rem 0 4rem;
 }
@@ -133,7 +133,7 @@ img {
   text-align: center;
 }
 
-/*==================== LAYOUT ====================*/
+/*-------------------- LAYOUT --------------------*/
 .container {
   max-width: 768px;
   margin-left: var(--mb-1-5);
@@ -154,7 +154,7 @@ img {
   background-color: var(--body-color);
 }
 
-/*==================== NAV ====================*/
+/*-------------------- NAV --------------------*/
 .nav{
     max-width: 932px;
     height: var(--header-height);
@@ -244,7 +244,7 @@ img {
 /* Change background header */
 
 
-/*==================== HOME ====================*/
+/*-------------------- HOME --------------------*/
 .home__container{
     gap: 1rem;
 }
@@ -328,7 +328,7 @@ img {
     font-size: 1.25rem;
 }
 
-/*==================== BUTTONS ====================*/
+/*-------------------- BUTTONS --------------------*/
 .button{
     display: inline-block;
     background-color: var(--first-color);
@@ -353,7 +353,7 @@ img {
     align-items: center;
 }
 
-/*==================== ABOUT ====================*/
+/*-------------------- ABOUT --------------------*/
 .about__img{
     width: 350px;
     border-radius: 1rem;
@@ -393,7 +393,7 @@ img {
     justify-content: center;
 }
 
-/*==================== SKILLS ====================*/
+/*-------------------- SKILLS --------------------*/
 .skills__container{
     row-gap: 0;
 }
@@ -493,40 +493,40 @@ img {
 
 
 
-/*==================== QUALIFICATION ====================*/
+/*-------------------- QUALIFICATION --------------------*/
 
 
-/*==================== SERVICES ====================*/
+/*-------------------- SERVICES --------------------*/
 
 
-/* Active Modal */
+/* Active Model */
 
 
-/*==================== PORTFOLIO ====================*/
+/*-------------------- PORTFOLIO --------------------*/
 
 
-/*==================== PROJECT IN MIND ====================*/
+/*-------------------- PROJECT IN MIND --------------------*/
 
 
-/*==================== TESTIMONIAL ====================*/
+/*-------------------- TESTIMONIAL --------------------*/
 
 
-/*==================== CONTACT ME ====================*/
+/*-------------------- CONTACT ME --------------------*/
 
 
-/*==================== FOOTER ====================*/
+/*-------------------- FOOTER --------------------*/
 
 
-/*========== SCROLL UP ==========*/
+/*---------- SCROLL UP ----------*/
 
 
 /* Show scroll */
 
 
-/*========== SCROLL BAR ==========*/
+/*---------- SCROLL BAR ----------*/
 
 
-/*==================== MEDIA QUERIES ====================*/
+/*-------------------- MEDIA QUERIES --------------------*/
 /* For small devices */
 
 
