@@ -99,7 +99,7 @@ skillsHeader.forEach((el) =>{
 /*-------------------- SERVICES MODAL --------------------*/
 const modelViews = document.querySelectorAll('.services__model'),
       modelBtns = document.querySelectorAll('.services__button'),
-      modelCloses = document.querySelectorAll('.services__model-close')
+      modelClose = document.querySelectorAll('.services__model-close')
 
 let model = function(modelClick){
     modelViews[modelClick].classList.add('active-model')
@@ -111,7 +111,7 @@ modelBtns.forEach((modelBtn, i) => {
     })
 })
 
-modelCloses.forEach((modelClose) => {
+modelClose.forEach((modelClose) => {
     modelClose.addEventListener('click', () =>{
         modelViews.forEach((modelView) =>{
             modelView.classList.remove('active-model')
