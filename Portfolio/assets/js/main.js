@@ -1,9 +1,9 @@
-/*==================== MENU SHOW Y HIDDEN ====================*/
+/*-------------------- MENU SHOW Y HIDDEN --------------------*/
 const navMenu = document.getElementById('nav-menu'),
       navToggle = document.getElementById('nav-toggle'),
       navClose = document.getElementById('nav-close')
       
-/*===== MENU SHOW =====*/
+/*----- MENU SHOW -----*/
 /* Validate if constant exists */
 if(navToggle){
     navToggle.addEventListener('click', () => {
@@ -11,7 +11,7 @@ if(navToggle){
     })
 }
 
-/*===== MENU HIDDEN =====*/
+/*----- MENU HIDDEN -----*/
 /* Validate if constant exists */
 if(navClose){
     navClose.addEventListener('click', () => {
@@ -19,7 +19,7 @@ if(navClose){
     })
 }
 
-/*==================== REMOVE MENU WHEN CLICKED OUTSIDE MENU ====================*/
+/*-------------------- REMOVE MENU WHEN CLICKED OUTSIDE MENU --------------------*/
 document.addEventListener('click', closeMenu);
 document.addEventListener('touch', closeMenu);
 
@@ -29,7 +29,7 @@ function closeMenu(event) {
     }
 }
 
-/*==================== REMOVE MENU MOBILE ====================*/
+/*-------------------- REMOVE MENU MOBILE --------------------*/
 const navLink = document.querySelectorAll('.nav__link')
 
 function linkAction(){
@@ -41,7 +41,7 @@ function linkAction(){
 
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
-/*==================== ACCORDION SKILLS ====================*/
+/*-------------------- ACCORDION SKILLS --------------------*/
 const skillsContent = document.getElementsByClassName('skills__content'),
       skillsHeader = document.querySelectorAll('.skills__header')
 
@@ -58,25 +58,25 @@ skillsHeader.forEach((el) =>{
     el.addEventListener('click', toggleSkills)
 })
 
-/*==================== QUALIFICATION TABS ====================*/
+/*-------------------- QUALIFICATION TABS --------------------*/
 
 
-/*==================== SERVICES MODAL ====================*/
+/*-------------------- SERVICES MODAL --------------------*/
 
 
-/*==================== PORTFOLIO SWIPER  ====================*/
+/*-------------------- PORTFOLIO SWIPER  --------------------*/
 
 
-/*==================== TESTIMONIAL ====================*/
+/*-------------------- TESTIMONIAL --------------------*/
 
 
-/*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
+/*-------------------- SCROLL SECTIONS ACTIVE LINK --------------------*/
 
 
-/*==================== CHANGE BACKGROUND HEADER ====================*/ 
+/*-------------------- CHANGE BACKGROUND HEADER --------------------*/ 
 
 
-/*==================== SHOW SCROLL UP ====================*/ 
+/*-------------------- SHOW SCROLL UP --------------------*/ 
 
 
-/*==================== DARK LIGHT THEME ====================*/ 
+/*-------------------- DARK LIGHT THEME --------------------*/ 
