@@ -41,7 +41,45 @@ function linkAction(){
 
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
+/*-------------------- QUALIFICATION TABS --------------------*/
+const tabs = document.querySelectorAll('[data-target]'),
+      tabContents = document.querySelectorAll('[data-content]')
+
+tabs.forEach(tab => {
+    tab.addEventListener('click', () =>{
+        const target = document.querySelector(tab.dataset.target)
+
+        tabContents.forEach(tabContent =>{
+            tabContent.classList.remove('qualification__active')
+        })
+        target.classList.add('qualification__active')
+    
+        tabs.forEach(tab =>{
+            tab.classList.remove('qualification__active')
+        })
+        tab.classList.add('qualification__active')
+    }) 
+})
+
 /*-------------------- ACCORDION SKILLS --------------------*/
+const skillsContent = document.getElementsByClassName('skills__content'),
+      skillsHeader = document.querySelectorAll('.skills__header')
+
+function toggleSkills(){
+    let itemClass = this.parentNode.className
+    for(i = 0; i < skillsContent.length; i++){
+        skillsContent[i].className = 'skills__content skills__close'
+    }
+    if(itemClass === 'skills__content skills__close'){
+        this.parentNode.className = 'skills__content skills__open'
+    }
+}
+
+skillsHeader.forEach((el) =>{
+    el.addEventListener('click', toggleSkills)
+})
+
+/* Have more than one skill open at a time
 const skillsContent = document.getElementsByClassName('skills__content'),
       skillsHeader = document.querySelectorAll('.skills__header')
 
@@ -56,13 +94,30 @@ function toggleSkills(){
 
 skillsHeader.forEach((el) =>{
     el.addEventListener('click', toggleSkills)
-})
-
-/*-------------------- QUALIFICATION TABS --------------------*/
-
+})*/
 
 /*-------------------- SERVICES MODAL --------------------*/
+const modelViews = document.querySelectorAll('.services__model'),
+      modelBtns = document.querySelectorAll('.services__button'),
+      modelCloses = document.querySelectorAll('.services__model-close')
 
+let model = function(modelClick){
+    modelViews[modelClick].classList.add('active-model')
+}
+
+modelBtns.forEach((modelBtn, i) => {
+    modelBtn.addEventListener('click', () =>{
+        model(i)
+    })
+})
+
+modelCloses.forEach((modelClose) => {
+    modelClose.addEventListener('click', () =>{
+        modelViews.forEach((modelView) =>{
+            modelView.classList.remove('active-model')
+        })
+    })
+})
 
 /*-------------------- PORTFOLIO SWIPER  --------------------*/
 
