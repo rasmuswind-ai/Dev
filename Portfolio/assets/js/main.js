@@ -119,11 +119,20 @@ modelClose.forEach((modelClose) => {
     })
 })
 
-/*-------------------- PORTFOLIO SWIPER  --------------------*/
+/*-------------------- DEMOS SWIPER  --------------------*/
+let swiper = new Swiper('.swiper', {
+    cssMode: true,
+    loop: true,
 
-
-/*-------------------- TESTIMONIAL --------------------*/
-
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+});
 
 /*-------------------- SCROLL SECTIONS ACTIVE LINK --------------------*/
 
